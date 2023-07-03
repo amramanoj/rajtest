@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rajcop_official/config/page_route.dart';
 import 'package:rajcop_official/config/theme.dart';
 import 'package:rajcop_official/presentation/screens/rms_dash_board/rms_dash_board.dart';
 void main(){
@@ -15,7 +16,8 @@ class Rajcop extends StatelessWidget {
       theme: customTheme(),
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
-      home: const RMSDashboard()
+      onGenerateRoute: CustomRoute.route,
+      initialRoute: CustomRoute.rmsDashboard,
     );
   }
 }

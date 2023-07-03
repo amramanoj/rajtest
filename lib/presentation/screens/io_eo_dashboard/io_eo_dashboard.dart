@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rajcop_official/presentation/screens/record_feedback/record_feedback.dart';
-import 'package:rajcop_official/presentation/screens/features/request_for.dart';
-import 'package:rajcop_official/presentation/screens/test/test.dart';
+import 'package:rajcop_official/config/page_route.dart';
 import 'package:rajcop_official/presentation/widgets/customcard_dashboard.dart';
 import 'package:rajcop_official/presentation/widgets/my_request1.dart';
 
@@ -75,7 +73,7 @@ GridView.count(crossAxisCount: 2,children:  [
   DashBoardCard(title: "Archive",image: "assets/box.png",onclick: (){
   }),
   DashBoardCard(title: "Your feedback",image: "assets/cd.png",onclick: (){
-    Navigator.push(context, MaterialPageRoute(builder: (_)=>const RecordFeedBack()));
+    Navigator.pushNamed(context, CustomRoute.recordFeedBack);
 
   }),
 
@@ -87,7 +85,7 @@ GridView.count(crossAxisCount: 2,children:  [
     floatingActionButton: FloatingActionButton(onPressed: () {
 
 
-      Navigator.push(context, MaterialPageRoute(builder: (_)=>const RequestFor()));
+      Navigator.pushNamed(context,CustomRoute.requestFor);
 
     },backgroundColor: Theme.of(context).primaryColorLight,child: const Icon(Icons.add),
     ),

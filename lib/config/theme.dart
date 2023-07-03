@@ -2,7 +2,6 @@
 
   import 'package:flutter/material.dart';
 
-
 screenWidth(context){
   return MediaQuery.of(context).size.width;
 }
@@ -21,7 +20,7 @@ primaryColor:primaryColor,
     primaryColorDark:primaryDark,
     primaryColorLight: primaryLight,
     primarySwatch: Colors.indigo,
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       titleMedium: TextStyle(
         fontSize: 23.0,
 color: Colors.white,
